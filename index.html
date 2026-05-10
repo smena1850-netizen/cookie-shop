@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>كوكي هاوس – لذة في كل قضمة</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">
+        <span class="logo-icon">🍪</span>
+        <span class="logo-text">كوكي هاوس</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero">الرئيسية</a></li>
+        <li><a href="#about">قصتنا</a></li>
+        <li><a href="#menu">المنيو</a></li>
+        <li><a href="#gallery">معرض الصور</a></li>
+        <li><a href="#contact">تواصل معنا</a></li>
+      </ul>
+      <button class="cart-btn" onclick="openCart()">
+        <span class="cart-icon">🛒</span>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+      <button class="hamburger" id="hamburger" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg"></div>
+    <div class="floating-cookies">
+      <span class="fc fc1">🍪</span>
+      <span class="fc fc2">🍫</span>
+      <span class="fc fc3">🍪</span>
+      <span class="fc fc4">✨</span>
+      <span class="fc fc5">🍪</span>
+      <span class="fc fc6">🍫</span>
+    </div>
+    <div class="hero-content">
+      <p class="hero-badge">طازجة يومياً ✦ خبز حرفي</p>
+      <h1 class="hero-title">لذة<br/><em>لا تُقاوَم</em><br/>في كل قضمة</h1>
+      <p class="hero-subtitle">كوكيز مصنوعة بحب من أجود المكونات، مخبوزة يدوياً كل يوم لتصل إليك دافئة ومثالية.</p>
+      <div class="hero-actions">
+        <a href="#menu" class="btn-primary">اطلب الآن</a>
+        <a href="#about" class="btn-ghost">تعرف علينا</a>
+      </div>
+    </div>
+    <div class="hero-image-wrap">
+      <div class="hero-cookie-display">
+        <div class="big-cookie">🍪</div>
+        <div class="cookie-halo"></div>
+        <div class="cookie-halo halo2"></div>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <span>اكتشف</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- ===== STATS ===== -->
+  <section class="stats-bar">
+    <div class="stats-container">
+      <div class="stat">
+        <span class="stat-num">+5000</span>
+        <span class="stat-label">عميل سعيد</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-num">20+</span>
+        <span class="stat-label">نكهة مختلفة</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-num">100%</span>
+        <span class="stat-label">مكونات طبيعية</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-num">3</span>
+        <span class="stat-label">سنوات خبرة</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="about" id="about">
+    <div class="section-container">
+      <div class="about-text">
+        <span class="section-tag">✦ قصتنا</span>
+        <h2 class="section-title">من مطبخنا<br/>إلى قلبك</h2>
+        <p>بدأت رحلة كوكي هاوس من مطبخ صغير وحلم كبير – تقديم أفضل كوكيز في المنطقة. نستخدم زبدة طبيعية، شوكولاتة بلجيكية، ودقيقاً مُختاراً لنضمن طعماً لا يُنسى.</p>
+        <p>كل قطعة تُخبز بعناية ومحبة، لتحمل لك لحظة سعادة حقيقية في كل مرة.</p>
+        <div class="about-features">
+          <div class="feature">
+            <span class="feature-icon">🌿</span>
+            <span>مكونات طبيعية 100%</span>
+          </div>
+          <div class="feature">
+            <span class="feature-icon">👩‍🍳</span>
+            <span>خبز حرفي يدوي</span>
+          </div>
+          <div class="feature">
+            <span class="feature-icon">📦</span>
+            <span>توصيل سريع</span>
+          </div>
+          <div class="feature">
+            <span class="feature-icon">🎁</span>
+            <span>تغليف هدايا مميز</span>
+          </div>
+        </div>
+      </div>
+      <div class="about-visual">
+        <div class="about-card about-card-1">
+          <span class="about-emoji">🍪</span>
+          <p>طازجة يومياً</p>
+        </div>
+        <div class="about-card about-card-2">
+          <span class="about-emoji">💛</span>
+          <p>مصنوعة بحب</p>
+        </div>
+        <div class="about-card about-card-3">
+          <span class="about-emoji">✨</span>
+          <p>نكهات حصرية</p>
+        </div>
+        <div class="about-blob"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MENU ===== -->
+  <section class="menu" id="menu">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag">✦ منيونا</span>
+        <h2 class="section-title">اختار نكهتك<br/>المفضلة</h2>
+        <p class="section-desc">كوكيز مخبوزة على مدار اليوم بنكهات لا تقاوم</p>
+      </div>
+
+      <div class="filter-tabs">
+        <button class="filter-btn active" data-filter="all">الكل</button>
+        <button class="filter-btn" data-filter="chocolate">شوكولاتة</button>
+        <button class="filter-btn" data-filter="nut">مكسرات</button>
+        <button class="filter-btn" data-filter="special">خاص</button>
+      </div>
+
+      <div class="products-grid" id="productsGrid">
+
+        <div class="product-card" data-category="chocolate">
+          <div class="product-badge">الأكثر مبيعاً</div>
+          <div class="product-emoji">🍪</div>
+          <div class="product-info">
+            <h3>دبل شوكولاتة</h3>
+            <p>كوكيز غنية بشوكولاتة بلجيكية مزدوجة، هشة من الخارج وطرية من الداخل</p>
+            <div class="product-footer">
+              <span class="product-price">25 جنيه</span>
+              <button class="add-to-cart" onclick="addToCart(this, 'دبل شوكولاتة', 25)">أضف +</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="chocolate">
+          <div class="product-emoji">🍫</div>
+          <div class="product-info">
+            <h3>نوتيلا ستافد</h3>
+            <p>كوكيز محشوة بنوتيلا كريمية تذوب في فمك مع أول قضمة</p>
+            <div class="product-footer">
+              <span class="product-price">35 جنيه</span>
+              <button class="add-to-cart" onclick="addToCart(this, 'نوتيلا ستافد', 35)">أضف +</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="nut">
+          <div class="product-emoji">🥜</div>
+          <div class="product-info">
+            <h3>بتر كوكيز</h3>
+            <p>زبدة فول سوداني أصيلة مع رقائق شوكولاتة، مزيج كلاسيكي لا يُنسى</p>
+            <div class="product-footer">
+              <span class="product-price">28 جنيه</span>
+              <button class="add-to-cart" onclick="addToCart(this, 'بتر كوكيز', 28)">أضف +</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="special">
+          <div class="product-badge new-badge">جديد</div>
+          <div class="product-emoji">🌟</div>
+          <div class="product-info">
+            <h3>لوتس كريم</h3>
+            <p>كوكيز بكريمة اللوتس اللذيذة، مقرمشة ومكسوة بشرائح البسكويت</p>
+            <div class="product-footer">
+              <span class="product-price">40 جنيه</span>
+              <button class="add-to-cart" onclick="addToCart(this, 'لوتس كريم', 40)">أضف +</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="nut">
+          <div class="product-emoji">🌰</div>
+          <div class="product-info">
+            <h3>مكسرات وعسل</h3>
+            <p>خليط رائع من الجوز والكاجو والعسل الطبيعي على كوكيز ذهبية</p>
+            <div class="product-footer">
+              <span class="product-price">32 جنيه</span>
+              <button class="add-to-cart" onclick="addToCart(this, 'مكسرات وعسل', 32)">أضف +</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="special">
+          <div class="product-emoji">🎂</div>
+          <div class="product-info">
+            <h3>بوكس هدايا</h3>
+            <p>بوكس مميز يحتوي على 6 كوكيز متنوعة في تغليف هدية أنيق</p>
+            <div class="product-footer">
+              <span class="product-price">150 جنيه</span>
+              <button class="add-to-cart" onclick="addToCart(this, 'بوكس هدايا', 150)">أضف +</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="chocolate">
+          <div class="product-emoji">🤎</div>
+          <div class="product-info">
+            <h3>وايت شوكولاتة</h3>
+            <p>شوكولاتة بيضاء فاخرة مع توت مجفف، مزيج مدهش من الحلاوة والحموضة</p>
+            <div class="product-footer">
+              <span class="product-price">30 جنيه</span>
+              <button class="add-to-cart" onclick="addToCart(this, 'وايت شوكولاتة', 30)">أضف +</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="special">
+          <div class="product-badge">موسمي</div>
+          <div class="product-emoji">🫐</div>
+          <div class="product-info">
+            <h3>بلوبيري تشيز</h3>
+            <p>كوكيز بكريمة الجبن والتوت الأزرق الطازج، نكهة موسمية لا تفوتها</p>
+            <div class="product-footer">
+              <span class="product-price">38 جنيه</span>
+              <button class="add-to-cart" onclick="addToCart(this, 'بلوبيري تشيز', 38)">أضف +</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GALLERY ===== -->
+  <section class="gallery" id="gallery">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag">✦ معرض الصور</span>
+        <h2 class="section-title">من مطبخنا<br/>لعيونك</h2>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item gi-large">
+          <div class="gallery-placeholder gp1">
+            <span>🍪</span><p>كوكيز طازجة</p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-placeholder gp2">
+            <span>🍫</span><p>شوكولاتة بلجيكية</p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-placeholder gp3">
+            <span>👩‍🍳</span><p>خبز حرفي</p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-placeholder gp4">
+            <span>🎁</span><p>تغليف هدايا</p>
+          </div>
+        </div>
+        <div class="gallery-item gi-wide">
+          <div class="gallery-placeholder gp5">
+            <span>✨</span><p>لحظات سعادة</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="testimonials">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag">✦ آراء عملاءنا</span>
+        <h2 class="section-title">قالوا عنا 💛</h2>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <p>"أحسن كوكيز جربتها في حياتي! الطعم مش طبيعي ودايماً طازجة. بطلبها كل أسبوع!"</p>
+          <div class="reviewer">
+            <span class="reviewer-avatar">👩</span>
+            <div>
+              <strong>سارة أحمد</strong>
+              <span>القاهرة</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card tc-featured">
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <p>"طلبت بوكس هدايا لأمي في عيد ميلادها وانبسطت جداً! التغليف رائع والطعم أروع. شكراً كوكي هاوس!"</p>
+          <div class="reviewer">
+            <span class="reviewer-avatar">👨</span>
+            <div>
+              <strong>محمد علي</strong>
+              <span>الجيزة</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <p>"نوتيلا ستافد دي جريمة! مش قادرة أوقف عن الأكل منها. التوصيل بيجي سريع وهي لسه دافية!"</p>
+          <div class="reviewer">
+            <span class="reviewer-avatar">👩</span>
+            <div>
+              <strong>نورا حسن</strong>
+              <span>الإسكندرية</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="contact" id="contact">
+    <div class="section-container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <span class="section-tag">✦ تواصل معنا</span>
+          <h2 class="section-title">نحن هنا<br/>لخدمتك</h2>
+          <p>لأي استفسار أو طلب خاص، تواصل معنا وسنرد عليك في أسرع وقت!</p>
+          <div class="contact-details">
+            <div class="contact-item">
+              <span class="contact-icon">📍</span>
+              <div>
+                <strong>العنوان</strong>
+                <span>شارع التحرير، وسط البلد، القاهرة</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">📞</span>
+              <div>
+                <strong>الهاتف</strong>
+                <span>01000000000</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">⏰</span>
+              <div>
+                <strong>ساعات العمل</strong>
+                <span>9 صباحاً – 11 مساءً، يومياً</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">📱</span>
+              <div>
+                <strong>السوشيال ميديا</strong>
+                <div class="social-links">
+                  <a href="#" class="social-link">إنستجرام</a>
+                  <a href="#" class="social-link">واتساب</a>
+                  <a href="#" class="social-link">فيسبوك</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form" onsubmit="handleSubmit(event)">
+          <h3>اتصل بنا</h3>
+          <div class="form-group">
+            <label>الاسم</label>
+            <input type="text" placeholder="اسمك الكريم" required />
+          </div>
+          <div class="form-group">
+            <label>رقم الهاتف</label>
+            <input type="tel" placeholder="01XXXXXXXXX" required />
+          </div>
+          <div class="form-group">
+            <label>البريد الإلكتروني</label>
+            <input type="email" placeholder="example@email.com" />
+          </div>
+          <div class="form-group">
+            <label>رسالتك</label>
+            <textarea placeholder="اكتب رسالتك أو طلبك الخاص هنا..." rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn-primary full-width">أرسل الرسالة 📨</button>
+          <div class="form-success" id="formSuccess">
+            ✅ تم إرسال رسالتك بنجاح! سنرد عليك قريباً.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="logo-icon">🍪</span>
+          <span class="logo-text">كوكي هاوس</span>
+          <p>لذة في كل قضمة</p>
+        </div>
+        <div class="footer-links">
+          <a href="#hero">الرئيسية</a>
+          <a href="#about">قصتنا</a>
+          <a href="#menu">المنيو</a>
+          <a href="#gallery">معرض الصور</a>
+          <a href="#contact">تواصل معنا</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 كوكي هاوس – جميع الحقوق محفوظة 🍪</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== CART DRAWER ===== -->
+  <div class="cart-overlay" id="cartOverlay" onclick="closeCart()"></div>
+  <div class="cart-drawer" id="cartDrawer">
+    <div class="cart-header">
+      <h3>سلة الطلبات 🛒</h3>
+      <button onclick="closeCart()" class="cart-close">✕</button>
+    </div>
+    <div class="cart-items" id="cartItems">
+      <div class="cart-empty">
+        <span>🍪</span>
+        <p>سلتك فاضية!</p>
+        <a href="#menu" onclick="closeCart()" class="btn-primary">اطلب دلوقتي</a>
+      </div>
+    </div>
+    <div class="cart-footer" id="cartFooter" style="display:none">
+      <div class="cart-total">
+        <span>المجموع:</span>
+        <span id="cartTotal">0 جنيه</span>
+      </div>
+      <button class="btn-primary full-width" onclick="checkout()">إتمام الطلب 🎉</button>
+    </div>
+  </div>
+
+  <!-- ===== TOAST ===== -->
+  <div class="toast" id="toast"></div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

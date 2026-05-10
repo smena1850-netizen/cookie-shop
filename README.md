@@ -1,2 +1,50 @@
-# cookie-shop
-cookie shop website using html&amp;css
+# 🍪 كوكي هاوس – Cookie House
+
+موقع ويب احترافي لمحل كوكيز، مبني بـ HTML & CSS & JavaScript خالص.
+
+## 🚀 المميزات
+
+- ✅ تصميم عصري وجميل بالكامل بـ HTML/CSS/JS
+- ✅ دعم كامل للغة العربية (RTL)
+- ✅ متجاوب مع جميع الأجهزة (Responsive)
+- ✅ سلة تسوق تفاعلية
+- ✅ فلترة المنتجات
+- ✅ نموذج تواصل
+- ✅ تأثيرات تمرير وأنيميشن
+- ✅ Scroll Reveal Animations
+- ✅ Toast Notifications
+
+## 📁 هيكل الملفات
+
+```
+cookie-shop/
+├── index.html        ← الصفحة الرئيسية
+├── css/
+│   └── style.css     ← جميع التنسيقات
+├── js/
+│   └── main.js       ← جميع الوظائف التفاعلية
+└── README.md
+```
+
+## 🌐 رفع على GitHub Pages
+
+1. أنشئ Repository جديد على GitHub
+2. ارفع الملفات كلها
+3. اذهب إلى **Settings → Pages**
+4. اختار **Deploy from a branch → main → / (root)**
+5. ✅ موقعك هيبقى شغال على: `https://username.github.io/repo-name`
+
+## 🎨 التخصيص
+
+- **الألوان**: غيّر المتغيرات في أول ملف `style.css` داخل `:root { ... }`
+- **المنتجات**: عدّل كروت المنتجات في `index.html`
+- **الأسعار**: غيّر الأسعار في الـ HTML مباشرةً
+- **اسم المحل**: ابحث عن "كوكي هاوس" واستبدله باسمك
+
+## 🛠️ التشغيل محلياً
+
+افتح `index.html` مباشرةً في المتصفح — لا تحتاج لأي سيرفر!
+
+---
+
+صُنع بـ ❤️ و 🍪
